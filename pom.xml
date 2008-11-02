@@ -2,15 +2,22 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.innoq.jersey</groupId>
-  <artifactId>JerseyTest</artifactId>
+  <artifactId>JSR311-Samples</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>JerseyTest Maven Webapp</name>
+  <name>JSR311-Samples Maven Webapp</name>
   <url>http://maven.apache.org</url>
     <build>
-        <finalName>JerseyTest</finalName>
+        <finalName>JSR311-Samples</finalName>
         <plugins>
-            <plugin>
+<plugin> 
+                    <groupId>org.apache.maven.plugins</groupId> 
+                    <artifactId>maven-compiler-plugin</artifactId> 
+                    <configuration> 
+                        <source>1.5</source> 
+                        <target>1.5</target> 
+                    </configuration> 
+                </plugin>              <plugin>
                 <groupId>org.mortbay.jetty</groupId>
                 <artifactId>maven-jetty-plugin</artifactId>
                 <configuration>
